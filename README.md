@@ -14,7 +14,7 @@ first project for Django
 　　具体介绍Django之前，必须先介绍WEB框架等概念。
 　　web框架： 别人已经设定好的一个web网站模板，你学习它的规则，然后“填空”或“修改”成你自己需要的样子。
 　　一般web框架的架构是这样的：
-   ![web 框架](mysite/img/1.PNG)
+   ![web 框架](img/1.PNG)
 　　其它基于python的web框架，如tornado、flask、webpy都是在这个范围内进行增删裁剪的。例如tornado用的是自己的异步非阻塞“wsgi”，flask则只提供了最精简和基本的框架。Django则是直接使用了WSGI，并实现了大部分功能。
 2. MVC/MTV介绍
 　　MVC百度百科：全名Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。
