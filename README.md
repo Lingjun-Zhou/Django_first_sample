@@ -2,6 +2,7 @@
 first project for Django
 
 源地址：https://blog.csdn.net/Sunshine_ZCC/article/details/73918408 
+
 本文面向：有python基础，刚接触web框架的初学者。
 
 　　环境：windows7  　　python3.5.1 　　pycharm专业版 　　Django 1.10版　　pip3
@@ -27,7 +28,7 @@ first project for Django
 
 3.Django的MTV模型组织
 　　目录分开，就必须有机制将他们在内里进行耦合。在Django中，urls、orm、static、settings等起着重要的作用。一个典型的业务流程是如下图所示：
-![web 业务流程](mysite/img/2.PNG)
+![web 业务流程](img/2.PNG)
 那么我们学Django学的是什么？
 
 1. 目录结构规范
@@ -42,11 +43,11 @@ first project for Django
 （1）安装Django：
 　　这里只介绍较为简单的pip3命令安装方式。
 　　win+r，调出cmd，运行命令：pip3 install django，自动安装Pypi提供的最新版本。
-  ![安装](mysite/img/3.PNG)
-  ![安装](mysite/img/4.PNG)
-  ![安装](mysite/img/5.PNG)
-  ![安装](mysite/img/6.PNG)
-  ![安装](mysite/img/7.PNG)
+  ![安装](img/3.PNG)
+  ![安装](img/4.PNG)
+  ![安装](img/5.PNG)
+  ![安装](img/6.PNG)
+  ![安装](img/7.PNG)
 （2）配置系统环境
 成功安装Django后，在下图中的路径可找到django-admin.exe文件，将它加入操作系统环境变量中。这样在以后的调用会比较方便。
 
@@ -55,12 +56,12 @@ first project for Django
 　　在linux等命令行界面下，使用django提供的命令和vim也能进行项目开发。但是，这里推荐使用pycharm这个目前最好的python开发IDE
 ，它功能强大，界面友好。（下面所有的操作都在pycharm中进行。）
 　　点击：file-->new project，出现下面的对话框。
- ![安装](mysite/img/8.PNG)
+ ![安装](img/8.PNG)
 选择Django栏目，输入项目名称，这里采用国际惯例的mysite。选择python解释器版本，点击create创建。
 Django将自动生成下面的目录结构：
- ![安装](mysite/img/9.PNG)
+ ![安装](img/9.PNG)
 与项目同名的目录中是配置文件，templates目录是html文件存放也就是MTV中的T。manage.py是django项目管理文件。
- ![安装](mysite/img/10.PNG)
+ ![安装](img/10.PNG)
 
 3. 创建APP
 　　在每个django项目中可以包含多个APP，相当于一个大型项目中的分系统、子模块、功能部件等等，相互之间比较独立，但也有联系。
@@ -68,16 +69,16 @@ Django将自动生成下面的目录结构：
 　　在pycharm下方的terminal终端中输入命令：
 　　python manage.py startapp cmdb
 　　这样就创建了一个叫做cmdb的APP，django自动生成“cmdb”文件夹。
-  ![创建app](mysite/img/11.PNG)
+  ![创建app](img/11.PNG)
 
 4. 编写路由
 　　路由都在urls文件里，它将浏览器输入的url映射到相应的业务处理逻辑。
 　　简单的urls编写方法如下图：
-  ![编写路由](mysite/img/13.PNG)
+  ![编写路由](img/13.PNG)
   
 5. 编写业务处理逻辑
 　　业务处理逻辑都在views.py文件里。
-  ![编写业务处理逻辑](mysite/img/12.PNG)
+  ![编写业务处理逻辑](img/12.PNG)
  　通过上面两个步骤，我们将index这个url指向了views里的index（）函数，它接收用户请求，并返回一个“hello world”字符串。
 
 6. 运行web服务
@@ -85,7 +86,7 @@ Django将自动生成下面的目录结构：
 　　命令行的方式是：python manage.py runserver 127.0.0.1:8000
 　　但在pycharm中，你可以这么干：
 　　在上部工具栏中找到下面图示的图标。
-  ![编写业务处理逻辑](mysite/img/14.PNG)
+  ![编写业务处理逻辑](img/14.PNG)
   
   
   
