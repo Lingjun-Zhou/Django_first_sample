@@ -16,7 +16,7 @@ first project for Django
 
 　　一般web框架的架构是这样的：
 
-   ![web 框架](/img/1.png)
+   ![web 框架](/tree/master/img/1.png)
 
  
 
